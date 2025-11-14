@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Tecnologia e Sociedade - Scratch na Escola</title>
+
+  <meta name="description" content="Resumo do problema abordado pelo projeto de extensão: acesso limitado à programação e uso criativo de tecnologia no ensino fundamental.">
+
+  <!-- Fonte (remova se quiser 100% offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/sobre.css" />
+
+</head>
+<body>
+  <!-- Fundo decorativo -->
+  <div class="bg-blob b1" aria-hidden="true"></div>
+  <div class="bg-blob b2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="ambient-dots" aria-hidden="true"></div>
+  <div id="bg-art" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="principal">
+      <a href="index.html#metodologia" class="brand">
+        <img src="./img/logo-scratch.png" alt="Logo Scratch" class="logo-scratch" />
+        <span class="logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6z" stroke="#0b1220" stroke-width="2"/>
+          </svg>
+        </span>
+        <strong>Explorando o mundo da Tecnologia com Scratch</strong>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="./index.html">Início</a></li>
+        <li><a class="active" href="./sobre.html">Sobre</a></li>
+        <li><a href="./metodologia.html">Metodologia</a></li>
+        <li><a href="./equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="section container" id="sobre">
+    <div class="hero">
+      <div>
+        <h1 class="title">Tecnologia e Sociedade<br><span>O problema que o projeto resolve</span></h1>
+        <p class="subtitle">
+          Estudantes usam tecnologia todos os dias, mas quase sempre como <strong>consumo</strong>.
+          Nosso projeto transforma esse contato em <strong>criação</strong>, com programação acessível,
+          lúdica e conectada à escola pública.
+        </p>
+        <div style="margin-top:14px;">
+          <a class="btn" href="metodologia.html">Ver a metodologia</a>
+          <a class="btn ghost" href="#problema">Entender o problema</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <span class="orb o1"></span>
+        <span class="orb o2"></span>
+        <span class="orb o3"></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NOVA FAIXA: Resumo rápido -->
+  <section class="section container" id="resumo">
+    <div class="grid-3">
+      <article class="card reveal">
+        <h3>Descrição do objetivo</h3>
+        <p class="subtitle">
+          Introduzir <strong>programação criativa</strong> no ensino fundamental com o
+          <strong>Scratch</strong>, desenvolvendo pensamento computacional, criatividade e expressão
+          multimodal por meio de oficinas curtas e mão na massa.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Problema que resolve</h3>
+        <p class="subtitle">
+          Alunos costumam usar tecnologia apenas como <em>consumo</em>. Falta acesso a
+          experiências guiadas de <strong>criar com tecnologia</strong> jogos, histórias e
+          animações de forma acessível, lúdica e integrada ao currículo.
+        </p>
+      </article>
+
+      <article class="card reveal">
+        <h3>Público-alvo</h3>
+        <p class="subtitle">
+          Estudantes do <strong>4º ao 9º ano</strong> e docentes da rede pública interessados em
+          levar atividades introdutórias de programação para a escola, com recursos mínimos
+          (laboratório de informática ou poucos notebooks).
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Problema -->
+  <section class="section container" id="problema">
+    <article class="card reveal card-wide">
+      <h2>Qual é o problema?</h2>
+      <p>
+        Estudantes do ensino fundamental têm contato frequente com tecnologias (celulares, computadores e internet),
+        porém esse contato costuma acontecer apenas como <strong>consumo de conteúdo</strong>. Falta, especialmente em
+        escolas públicas, a oportunidade de aprender <strong>programação de forma acessível e lúdica</strong>.
+      </p>
+      <p>
+        Essa lacuna reduz o desenvolvimento de <strong>raciocínio lógico</strong>, <strong>criatividade</strong> e
+        <strong>autonomia</strong>, além de dificultar a <strong>inclusão digital</strong> e o interesse por áreas de
+        tecnologia. Também distancia a universidade da comunidade escolar, limitando ações de extensão que poderiam
+        aproximar teoria e prática.
+      </p>
+      <p>
+        Em resumo: existe um <strong>déficit de acesso à programação</strong> no ensino fundamental e de uso da
+        tecnologia como ferramenta de <strong>aprendizagem ativa</strong>, o que impacta a formação integral dos alunos.
+      </p>
+    </article>
+  </section>
+
+  <!-- Por que importa -->
+  <section class="section container" id="porque-importa">
+    <div class="grid-3">
+      <article class="card reveal">
+        <h3>Por que isso importa?</h3>
+        <ul class="check">
+          <li>Desenvolve pensamento lógico e resolução criativa de problemas.</li>
+          <li>Fortalece autonomia e colaboração entre pares.</li>
+          <li>Amplia a inclusão digital e o interesse por STEM.</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h3>Nossa resposta</h3>
+        <ul class="check">
+          <li>Oficinas práticas usando <strong>Scratch</strong> e projetos curtos.</li>
+          <li>Propostas que integram <em>arte + lógica + narrativa</em>.</li>
+          <li>Parceria universidade - escola e formação de multiplicadores.</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h3>Como funciona na escola</h3>
+        <ul class="check">
+          <li>Encontros de 45 - 60 min, em duplas, com metas simples.</li>
+          <li>Feedback rápido, mostra de projetos e próximos passos.</li>
+          <li>Recursos mínimos: lab/quadra de informática ou notebooks.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Indicadores / Resultados (placeholder) -->
+  <section class="section container" id="impacto">
+    <h2 class="section-head">Indicadores e Resultados</h2>
+    <div class="grid-3">
+      <article class="card reveal" aria-live="polite">
+        <h3>Alunos atendidos</h3>
+        <p class="subtitle">em oficinas e mostras</p>
+        <p style="font-size:28px;font-weight:800;margin:6px 0 0;">75</p>
+      </article>
+      <article class="card reveal">
+        <h3>Projetos criados</h3>
+        <p class="subtitle">jogos, histórias, animações</p>
+        <p style="font-size:28px;font-weight:800;margin:6px 0 0;">4</p>
+      </article>
+      <article class="card reveal">
+        <h3>Escolas parceiras</h3>
+        <p class="subtitle">rede pública municipal/estadual</p>
+        <p style="font-size:28px;font-weight:800;margin:6px 0 0;">1</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Chamada -->
+  <section class="section container" id="contato">
+    <article class="card reveal card-wide">
+      <h2>Vamos levar programação criativa para mais alunos?</h2>
+      <p class="subtitle">
+        Entre em contato para parcerias, oficinas ou mostras de projetos. Também
+        podemos apoiar docentes interessados em aplicar a metodologia.
+      </p>
+      <div style="margin-top:10px;">
+        <a class="btn" href="metodologia.html">Ver a metodologia</a>
+        <a class="btn ghost" href="mailto:contato@sua-instituicao.br">Escrever e-mail</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="foot" role="contentinfo">
+    <p>&copy; Projeto de Extensão • Scratch na Escola</p>
+  </footer>
+  
+  <script src="js/main.js" defer></script>
+</body>
+</html>

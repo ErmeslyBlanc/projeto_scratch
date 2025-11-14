@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nossa Equipe - Scratch na Escola</title>
+
+  <!-- Ícones sociais -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Tema global + estilo desta página -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/equipe.css" />
+
+</head>
+<body>
+  <!-- fundo do tema -->
+  <div class="bg-blob b1" aria-hidden="true"></div>
+  <div class="bg-blob b2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="bg-art" aria-hidden="true"></div>
+  <div id="ambient-dots" aria-hidden="true"></div>
+
+  <!-- Navbar (igual às outras páginas) -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="principal">
+      <a class="brand" href="index.html">
+        <img src="./img/logo-scratch.png" alt="Logo Scratch" class="logo-scratch" />
+        <span class="logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6z" stroke="#0b1220" stroke-width="2"/>
+          </svg>
+        </span>
+        <strong>Explorando o mundo da Tecnologia com Scratch</strong>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./metodologia.html">Metodologia</a></li>
+        <li><a class="active" href="./equipe.html">Equipe</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero da página -->
+  <section class="container section team-hero">
+    <h1 class="title">Nossa <span>equipe</span></h1>
+    <p class="subtitle">Conheça quem faz o projeto acontecer no dia a dia.</p>
+  </section>
+
+  <!-- Líder em destaque -->
+  <section class="container">
+    <article class="card reveal team-leader">
+      <div class="leader-media">
+        <img class="avatar-xl" src="./img/lider.jpeg" alt="Foto da líder Ermesly Blanc" />
+      </div>
+      <div class="leader-info">
+        <h3 class="kicker">Líder da equipe</h3>
+        <h2 class="leader-name">Ermesly Blanc</h2>
+        <p class="muted"><strong>Matrícula:</strong> 03358148 • <strong>Função:</strong> Coordenadora & DEV</p>
+        <p class="leader-bio">
+          Inspira o grupo, organiza o trabalho de forma justa e incentiva cada integrante a
+          dar o seu melhor. Sob sua orientação, mantemos o foco, a colaboração e entregamos
+          resultados de qualidade.
+        </p>
+        <div class="social" aria-label="Redes sociais de Ermesly Blanc">
+          <a href="https://www.linkedin.com/in/ermesly-blanc-640a1a170/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Demais membros -->
+  <section class="container section">
+    <div class="team-grid">
+      <!-- Luiz -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa2.jpeg" alt="Foto de Luiz Carlos Pontes Bastos">
+        <h3>Luiz Carlos Pontes Bastos</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03359239 • <strong>Função:</strong> DEV</p>
+        <p>
+          Estudante de ADS; atua na Defesa Civil do Amazonas. Interessa-se por soluções
+          práticas e tecnologia aplicada ao cotidiano.
+        </p>
+        <div class="social" aria-label="Redes sociais de Luiz">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/clackwiizard?igsh=ZzUzeGdkbDJqYTVk" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- Saymon -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa3.jpeg" alt="Foto de Saymon Henrique Cruz Alencar">
+        <h3>Saymon Henrique Cruz Alencar</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03356110 • <strong>Função:</strong> Dev. Backend / IA</p>
+        <p>
+          Apaixonado por backend e IA generativa, gosta de criar APIs robustas e
+          explorar automações inteligentes.
+        </p>
+        <div class="social" aria-label="Redes sociais de Saymon">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- André -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa4.jpeg" alt="Foto de André dos Anjos Nogueira">
+        <h3>André dos Anjos Nogueira</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03357049 • <strong>Função:</strong> Dev</p>
+        <p>
+          Cursa ADS e trabalha na EMTU. Experiência em manutenção de micros (hardware e software);
+          busca oportunidades para aplicar e expandir conhecimentos em desenvolvimento.
+        </p>
+        <div class="social" aria-label="Redes sociais de André">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- Victor -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa11.jpeg" alt="Foto de Victor Hugo Santos da Silva">
+        <h3>Victor Hugo Santos da Silva</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03360093 • <strong>Função:</strong> Dev</p>
+        <p>
+          Trabalha com varejo e está migrando para tecnologia. Focado em aprender e
+          construir base sólida para carreira em programação.
+        </p>
+        <div class="social" aria-label="Redes sociais de Victor Hugo">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- Marie -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa6.jpeg" alt="Foto de Marie Katiana Pierre">
+        <h3>Marie Katiana Pierre</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03358267 • <strong>Função:</strong> Dev</p>
+        <p>
+          Estudante de ADS, apaixonada por tecnologia e pela transformação que a área
+          promove na vida das pessoas.
+        </p>
+        <div class="social" aria-label="Redes sociais de Marie Katiana">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/share/1CPhwZjsJc/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/katianapierremarie?igsh=MTh3YTQyM2tyMXZwNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- Gabriel -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa7.jpeg" alt="Foto de Gabriel Santos Ferreira">
+        <h3>Gabriel Santos Ferreira</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03352671 • <strong>Função:</strong> Dev</p>
+        <p>
+          Estudante de ADS (2º semestre). Apaixonado por tecnologia, cultura geek,
+          meio ambiente, games e esportes. Busca evolução contínua.
+        </p>
+        <div class="social" aria-label="Redes sociais de Gabriel">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+      <!-- Ryan -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa8.jpeg" alt="Foto de Ryan Da Silva Varjão">
+        <h3>Ryan Da Silva Varjão</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03360093 • <strong>Função:</strong> Dev</p>
+        <p>
+          Cursa ADS e está desenvolvendo habilidades para ingressar na área de
+          desenvolvimento de software.
+        </p>
+        <div class="social" aria-label="Redes sociais de Ryan">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+
+      <!-- Jackson -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa9.jpeg" alt="Foto de Ryan Da Silva Varjão">
+        <h3>Jackson Marques de Souza</h3>
+        <p class="muted"><strong>Matrícula:</strong> 03360027 • <strong>Função:</strong> Dev</p>
+        <p>
+            Jackson Marques de Souza, designer web freelancer e empresário, com 31 anos e natural de Manaus. Tem paixão por criar experiências digitais que unem estética, 
+            funcionalidade e inovação. Apaixonado por tecnologia e games.
+        </p>
+        <div class="social" aria-label="Redes sociais de Ryan">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+
+      <!-- Fabrício -->
+      <article class="card reveal member">
+        <img class="avatar" src="./img/pessoa10.jpeg" alt="Foto de Ryan Da Silva Varjão">
+        <h3>Fabrício Belém Pena </h3>
+        <p class="muted"><strong>Matrícula:</strong> 3360473 • <strong>Função:</strong> Dev</p>
+        <p>
+          Cursa ADS e está desenvolvendo habilidades para ingressar na área de
+          desenvolvimento de software.
+        </p>
+        <div class="social" aria-label="Redes sociais de Ryan">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer (igual às outras páginas) -->
+  <<footer class="foot" role="contentinfo">
+    <p>&copy; Projeto de Extensão • Scratch na Escola</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scratch na Escola - Projeto de Extensão</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Projeto de extensão que leva oficinas de programação com Scratch para escolas: encontros curtos, desafios práticos e jogos para desenvolver lógica, criatividade e trabalho em equipe." />
+
+  <!-- Tipografia e CSS do seu tema -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+  
+</head>
+<body>
+  <!-- Fundo decorativo do tema -->
+  <div class="bg-blob b1" aria-hidden="true"></div>
+  <div class="bg-blob b2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="ambient-dots" aria-hidden="true"></div>
+  <div id="bg-art" aria-hidden="true"></div>
+
+  <!-- Cabeçalho / Navbar -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="principal">
+      <a class="brand" href="index.html">
+        <img src="./img/logo-scratch.png" alt="Logo Scratch" class="logo-scratch" />
+        <span class="logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6z" stroke="#0b1220" stroke-width="2"/>
+          </svg>
+        </span>
+        <strong>Explorando o mundo da Tecnologia com Scratch</strong>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a class="active" href="index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="metodologia.html">Metodologia</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="container section" style="padding-top:18px">
+    <div class="hero">
+      <!-- Texto principal -->
+      <div>
+        <h1 class="title" style="margin-top:6px;">
+          Explorando a <span>programação</span> com Scratch
+        </h1>
+
+        <p class="subtitle" style="max-width:62ch">
+          “Transformando curiosidade em criatividade através da programação.” Oficinas curtas,
+          desafios práticos e jogos para aprender criando.
+        </p>
+
+        <div style="margin-top:14px;">
+          <a class="btn" href="metodologia.html">Ver como funciona</a>
+          <a class="btn ghost" href="sobre.html" style="margin-left:8px;">Conheça o projeto</a>
+        </div>
+      </div>
+
+      <!-- Destaque visual (sua imagem) -->
+      <figure class="card reveal" style="margin:0; padding:0; overflow:hidden;">
+        <img src="/img/scratch.jpg" alt="Scratch - exemplo" style="display:block; width:100%; height:auto; aspect-ratio:16/10; object-fit:cover;" />
+        <figcaption class="subtitle" style="padding:10px 14px;">Aprender fazendo, de forma visual e divertida.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CHAMADAS RÁPIDAS (cards) -->
+  <section class="container" style="margin-top:12px;">
+    <div class="grid-3">
+      <article class="card reveal">
+        <h3 style="margin:0 0 6px;">Oficinas práticas</h3>
+        <p class="subtitle">Roteiro simples (45 - 60 min), trabalho em pares e feedback rápido.</p>
+        <div style="margin-top:8px;"><a class="btn" href="metodologia.html">Roteiro</a></div>
+      </article>
+
+      <article class="card reveal">
+        <h3 style="margin:0 0 6px;">Jogos & desafios</h3>
+        <p class="subtitle">Mini-jogos Scratch e desafios de 5 - 10 minutos para aquecer a turma.</p>
+        <div style="margin-top:8px;"><a class="btn" href="metodologia.html#metodologia">Ver desafios</a></div>
+      </article>
+
+      <article class="card reveal">
+        <h3 style="margin:0 0 6px;">Resultados</h3>
+        <p class="subtitle">Indicadores de participação, produções e aprendizados dos alunos.</p>
+        <div style="margin-top:8px;"><a class="btn" href="sobre.html#impacto">Acompanhar</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BLOCO “POR QUE PARTICIPAR?” -->
+  <section class="container" style="margin-top:12px;">
+    <article class="card reveal">
+      <h2 style="margin:0 0 6px;">Por que participar?</h2>
+      <ul class="check" style="margin-top:6px;">
+        <li>Desenvolve raciocínio lógico, criatividade e autonomia.</li>
+        <li>Facilita a inclusão digital com recursos acessíveis.</li>
+        <li>Integra escola e universidade em ações de extensão.</li>
+      </ul>
+      <div style="margin-top:12px;">
+        <a class="btn" href="contato.html">Quero levar para minha escola</a>
+        <a class="btn ghost" href="equipe.html" style="margin-left:8px;">Conheça a equipe</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- FOOTER -->
+   <footer class="foot" role="contentinfo">
+    <p>&copy; Projeto de Extensão • Scratch na Escola</p>
+  </footer>
+
+  <!-- JS comum do site (menu mobile, reveal, dots etc.) -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

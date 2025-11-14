@@ -1,0 +1,393 @@
+/* ---------- RESET & BASE ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fffdf9;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+:root {
+  --laranja: #ff9f00;
+  --laranja-escuro: #ff8800;
+  --azul: #007bff;
+  --azul-escuro: #0055c9;
+  --texto: #222;
+  --texto-suave: #555;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- CONTAINER & SECTIONS ---------- */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+.section + .section {
+  margin-top: -10px;
+}
+
+.section-head {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--azul);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* ---------- NAVBAR ---------- */
+.nav-wrap {
+  background: var(--laranja);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.brand strong {
+  margin-left: 6px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.nav-list a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-list .active {
+  background: #fff;
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+
+.logo-scratch {
+  height: 38px;
+  width: auto;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.brand strong {
+  line-height: 1.2;
+}
+
+
+.logo-scratch {
+  height: 38px;
+  width: auto;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.brand strong {
+  line-height: 1.2;
+}
+
+
+/* ---------- HERO (Topo da página) ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 35px 0 10px;
+  position: relative;
+}
+
+.hero > div:first-child {
+  flex: 1 1 480px;
+}
+
+.hero-art {
+  flex: 1 1 420px;
+  position: relative;
+  height: 230px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--azul);
+  line-height: 1.2;
+}
+
+.title span {
+  color: var(--laranja);
+  display: block;
+}
+
+.subtitle {
+  color: var(--texto-suave);
+  font-size: 1.05rem;
+  margin-top: 8px;
+  max-width: 60ch;
+}
+
+/* ---------- ORBS ---------- */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+  animation: float 8s ease-in-out infinite alternate;
+}
+
+.o1 {
+  width: 160px;
+  height: 160px;
+  background: var(--laranja);
+  top: 40px;
+  left: 50px;
+}
+
+.o2 {
+  width: 130px;
+  height: 130px;
+  background: var(--azul);
+  bottom: 30px;
+  right: 40px;
+}
+
+.o3 {
+  width: 110px;
+  height: 110px;
+  background: var(--laranja);
+  top: 100px;
+  right: 100px;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-25px);
+  }
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.card h3,
+.card h2 {
+  color: var(--azul-escuro);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--texto-suave);
+  font-size: 0.98rem;
+}
+
+.card-wide {
+  grid-column: 1 / -1;
+}
+
+/* ---------- GRID ---------- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+/* ---------- CHECKLIST ---------- */
+.check {
+  list-style: none;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.check li {
+  position: relative;
+  margin-bottom: 6px;
+  padding-left: 22px;
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+}
+
+.check li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--laranja);
+  font-weight: bold;
+}
+
+/* ---------- BOTÕES ---------- */
+.btn {
+  display: inline-block;
+  background: var(--laranja);
+  color: #fff;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 8px rgba(255, 159, 0, 0.3);
+}
+
+.btn:hover {
+  background: var(--laranja-escuro);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--laranja);
+  border: 2px solid var(--laranja);
+  box-shadow: none;
+}
+
+.btn.ghost:hover {
+  background: var(--laranja);
+  color: #fff;
+}
+
+/* ---------- FUNDO ---------- */
+.bg-blob {
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  z-index: -10;
+  opacity: 0.2;
+  filter: blur(80px);
+}
+
+.b1 {
+  background: var(--laranja);
+  top: 10%;
+  left: -10%;
+}
+
+.b2 {
+  background: var(--azul);
+  bottom: 10%;
+  right: -10%;
+}
+
+.grid-overlay {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  position: fixed;
+  inset: 0;
+  z-index: -20;
+}
+
+/* ---------- FOOTER ---------- */
+.foot {
+  background: var(--laranja);
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-weight: 600;
+  border-top: 4px solid var(--laranja-escuro);
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 0 10px;
+  }
+
+  .hero-art {
+    order: -1;
+    height: 180px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}

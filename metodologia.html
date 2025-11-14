@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Metodologia - Scratch na Escola</title>
+
+  <!-- Fonte (remova se quiser 100% offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/metodologia.css" />
+
+</head>
+<body>
+  <!-- Fundo decorativo -->
+  <div class="bg-blob b1" aria-hidden="true"></div>
+  <div class="bg-blob b2" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div id="ambient-dots" aria-hidden="true"></div>
+  <div id="bg-art" aria-hidden="true"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="principal">
+      <a href="#metodologia" class="brand">
+        <img src="./img/logo-scratch.png" alt="Logo Scratch" class="logo-scratch" />
+        <span class="logo" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6z" stroke="#0b1220" stroke-width="2"/>
+          </svg>
+        </span>
+        <strong>Explorando o mundo da Tecnologia com Scratch</strong>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a class="active" href="./metodologia.html">Metodologia</a></li>
+        <li><a href="./equipe.html">Equipe</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== METODOLOGIA ===== -->
+  <section id="metodologia" class="section container">
+    <div class="section-head">
+      <h2>Metodologia / Como funciona</h2>
+    </div>
+
+    <!-- Barra de progresso dos passos -->
+    <div class="stepbar" aria-hidden="true">
+      <div class="stepbar-track">
+        <div class="stepbar-fill" id="stepbar-fill"></div>
+      </div>
+      <ol class="stepbar-dots">
+        <li class="dot active" data-step="1">1</li>
+        <li class="dot" data-step="2">2</li>
+        <li class="dot" data-step="3">3</li>
+        <li class="dot" data-step="4">4</li>
+      </ol>
+    </div>
+
+    <!-- Stepper: 4 cards -->
+    <ol class="steps metodologia-grid" aria-label="Etapas do processo">
+      <li class="step card reveal">
+        <div class="badge">1</div>
+        <h3>Contato & Alinhamento</h3>
+        <p>Objetivos, cronograma (2x/semana) e turmas definidos junto à escola.</p>
+      </li>
+
+      <li class="step card reveal">
+        <div class="badge">2</div>
+        <h3>Preparação de Materiais</h3>
+        <p>Dispositivos configurados, projetos-modelo e contas no Scratch validadas.</p>
+      </li>
+
+      <li class="step card reveal">
+        <div class="badge">3</div>
+        <h3>Oficinas Práticas</h3>
+        <p>Mão na massa em duplas; extensionistas apoiam grupos pequenos.</p>
+      </li>
+
+      <li class="step card reveal">
+        <div class="badge">4</div>
+        <h3>Apresentação & Avaliação</h3>
+        <p>Mostra dos projetos, feedback e próximos passos.</p>
+      </li>
+    </ol>
+
+    <!-- Card largo: Roteiro do encontro -->
+    <article class="card reveal card-wide" style="margin-top:22px">
+      <h3>Roteiro do encontro (45 - 60 min)</h3>
+      <ul class="timeline">
+        <li><span class="timechip">5 min</span> Acolhida e objetivo do dia</li>
+        <li><span class="timechip">10 min</span> Demonstração guiada (movimento/sons)</li>
+        <li><span class="timechip">20 min</span> Desafio em duplas (meta simples + bônus)</li>
+        <li><span class="timechip">10 min</span> Compartilhar projetos e feedback rápido</li>
+        <li><span class="timechip">5 min</span> Registro do aprendizado / próximos passos</li>
+      </ul>
+    </article>
+
+    <!-- Nossos jogos rápidos (3 itens, sem scroll) -->
+    <article class="card reveal" style="margin-top:16px;">
+      <h3>Nossos jogos rápidos (5 - 10 min)</h3>
+
+      <div class="chips-row" id="quick-challenges">
+        <!-- 1) Capturar Frutas -->
+        <div class="chipx"
+             data-copy="Mover o ator com setas; tocar som ao pegar a fruta."
+             data-project="1216367113"
+             data-mini-tempo="30"
+             data-mini-alvos="6"
+             data-mini-vel="1.6">
+          Capturar Frutas
+          <button class="copy" type="button">Copiar</button>
+          <button class="play" type="button">▶ Jogar</button>
+        </div>
+
+        <!-- 2) Jogo da Cobrinha -->
+        <div class="chipx"
+             data-copy="Aumente o tamanho ao comer o item; evite paredes."
+             data-project="1216363197"
+             data-mini-tempo="40"
+             data-mini-alvos="8"
+             data-mini-vel="1.8">
+          Jogo da Cobrinha
+          <button class="copy" type="button">Copiar</button>
+          <button class="play" type="button">▶ Jogar</button>
+        </div>
+
+        <!-- 3) Ping Pong -->
+        <div class="chipx"
+             data-copy="Mantenha a bola em jogo e some pontos ao passar do adversário."
+             data-project="1210781605"
+             data-mini-tempo="35"
+             data-mini-alvos="10"
+             data-mini-vel="2.0">
+          Ping Pong
+          <button class="copy" type="button">Copiar</button>
+          <button class="play" type="button">▶ Jogar</button>
+        </div>
+      </div>
+
+      <p class="hint" style="margin-top:8px;">Dica: escolha 1 - 2 jogos por encontro e celebre cada entrega. 🎉</p>
+    </article>
+
+    <!-- Trinca de cards -->
+    <div class="grid-3" style="margin-top:18px">
+      <article class="card reveal">
+        <h3>Recursos</h3>
+        <ul class="check">
+          <li>Computadores/tablets (1 por dupla)</li>
+          <li>Contas no Scratch validadas</li>
+          <li>Projetor e/ou caixa de som</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Papéis</h3>
+        <ul class="check">
+          <li><strong>Docente</strong>: media a turma e define combinados</li>
+          <li><strong>Extensionistas</strong>: acompanham grupos pequenos</li>
+          <li><strong>Alunos</strong>: criam, testam e apresentam</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Princípios</h3>
+        <ul class="check">
+          <li>Aprender fazendo (tentativa e erro)</li>
+          <li>Trabalho em pares e colaboração</li>
+          <li>Feedback curto e frequente</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- FAQ rápido -->
+    <article class="card reveal" style="margin-top:16px;">
+      <h3>FAQ rápido</h3>
+      <details class="faq">
+        <summary>Quanto tempo por oficina?</summary>
+        Em média 45-60 min. O roteiro acima funciona bem; ajuste ao ritmo da turma.
+      </details>
+      <details class="faq">
+        <summary>Precisa de internet?</summary>
+        Ajuda para validar contas e salvar, mas dá para praticar com exemplos offline também.
+      </details>
+      <details class="faq">
+        <summary>Como avaliar?</summary>
+        Observe participação, tentativa/erro e apresentação do projeto (não apenas “funciona ou não”).
+      </details>
+    </article>
+  </section>
+
+  <!-- ========= MODAL do Desafio (Scratch / Mini-game) ========= -->
+  <div class="modal" id="modal-desafio" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" type="button" aria-label="Fechar">×</button>
+
+      <h3 id="modal-title">Desafio</h3>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="scratch" type="button">Scratch</button>
+        <button class="tab" data-tab="mini" type="button">Mini-game</button>
+      </div>
+
+      <!-- Painel: Scratch -->
+      <div class="tab-panel show" data-panel="scratch">
+        <!-- começa com o 1º projeto; o JS troca quando clicar em “Jogar” -->
+        <div class="scratch-embed" data-project="1216367113"></div>
+        <div class="embed-actions">
+          <a class="btn" id="ver-projeto" target="_blank" rel="noopener">Abrir no Scratch</a>
+          <a class="btn ghost" id="remixar-projeto" target="_blank" rel="noopener">Remixar</a>
+        </div>
+      </div>
+
+      <!-- Painel: Mini-game -->
+      <div class="tab-panel" data-panel="mini">
+        <div class="mini-wrap">
+          <canvas id="miniCanvas" width="640" height="360"></canvas>
+          <div class="hud">
+            <span>Tempo: <b id="tempo">30</b>s</span>
+            <span>Pontos: <b id="pontos">0</b></span>
+            <button class="btn" id="iniciar-mini" type="button">Iniciar</button>
+          </div>
+        </div>
+        <p class="muted">Clique nas orbes brilhantes para pontuar. A velocidade aumenta ao acertar!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="foot" role="contentinfo">
+    <p>&copy; Projeto de Extensão • Scratch na Escola</p>
+  </footer>
+  
+  <script src="js/main.js" defer></script>
+</body>
+</html>
