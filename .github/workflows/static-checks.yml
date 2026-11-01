@@ -1,0 +1,62 @@
+name: Static website checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML documents and local assets
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import unquote, urlsplit
+
+          root = Path.cwd().resolve()
+          pages = sorted(root.glob("*.html"))
+          assert pages, "No HTML pages found"
+
+          class References(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.refs = []
+              def handle_starttag(self, tag, attrs):
+                  a = dict(attrs)
+                  for key in ("href", "src"):
+                      if a.get(key):
+                          self.refs.append((tag, key, a[key]))
+
+          errors = []
+          for page in pages:
+              markup = page.read_text(encoding="utf-8")
+              if "<!doctype html" not in markup.lower():
+                  errors.append(f"{page.name}: missing doctype")
+              if "<title" not in markup.lower():
+                  errors.append(f"{page.name}: missing title")
+              parser = References()
+              parser.feed(markup)
+              for tag, key, url in parser.refs:
+                  if url.startswith(("#", "//", "mailto:", "tel:", "data:")):
+                      continue
+                  parts = urlsplit(url)
+                  if parts.scheme:
+                      continue
+                  local_path = unquote(parts.path)
+                  if not local_path:
+                      continue
+                  resolved = (root / local_path.lstrip("/") if local_path.startswith("/") else page.parent / local_path).resolve()
+                  if not resolved.is_relative_to(root) or not resolved.is_file():
+                      errors.append(f"{page.name}: missing local {key} {url}")
+          if errors:
+              raise SystemExit("\n".join(errors))
+          print(f"PASS: {len(pages)} HTML pages and their local links/assets")
+          PY
